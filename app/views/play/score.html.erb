@@ -1,6 +1,9 @@
 <h1>*****Your score*****</h1>
+  <ul>
+    <li>Your choice:<%= @choice %></li>
+    <li> Means:<%= @result[:translation] %></li>
+    <li> Your time: <%= @result[:time]%></li>
+    <li> Your score : <%= @result[:score]%></li>
+  <h3><%= @result[:message]%>!!</h3>
+  </ul>
 
-<p>Your result</p>
-<%= @choice %>
-
-<%= @result %>

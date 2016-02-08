@@ -14,7 +14,7 @@ class PlayController < ApplicationController
   def score
     @choice = params[:choice]
     @start_time = Time.parse(params[:start_time])
-    @grid = JSON.parse(params[:grid])
+    @grid = JSON.parse(params[:grid]) #ou params[:grid].split("")
     @end_time = Time.now
     @time = @end_time - @start_time
     @result = run_game(@choice, @grid, @start_time, @end_time)

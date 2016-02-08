@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+
+  root to: 'play#game'
   get '/game', to:'play#game'
 
   get '/score', to:'play#score'
